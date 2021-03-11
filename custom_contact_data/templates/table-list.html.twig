@@ -1,0 +1,7 @@
+<div>
+<h2>Custom List:</h2>
+    <table><tr><th>Name</th><th>Phone</th><th>E-mail</th><th>Address</th></tr></table>
+{% for values in items %}
+    <table><tr><td>{{values.name}}</td><td>{{values.phone}}</td><td>{{values.email}}</td><td>{{values.address}}</td></tr></table>
+{% endfor %}
+</div>    

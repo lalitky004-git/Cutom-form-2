@@ -1,0 +1,11 @@
+<?php
+/**
+ * Implements hook_theme().
+ */
+function custom_contact_data_theme($existing, $type, $theme, $path) {
+  return [
+    'table_list' => [
+      'variables' => ['items' => array()],
+    ],
+  ];
+}

@@ -1,0 +1,23 @@
+custom_contact_data.form:
+ path: '/simpleform2/myform'
+ defaults:
+   _title: 'Contact form'
+   _form: '\Drupal\custom_contact_data\Form\SimpleForm'
+ requirements:
+   _permission: 'access content'
+
+custom_contact_data.custom_controller_getCustomData:
+  path: '/custom_contact_data/custom-data'
+  defaults:
+    _controller: '\Drupal\custom_contact_data\Form\CustomController::getCustomData'
+    _title: 'Custom Data'
+  requirements:
+    _permission: 'access content'
+
+custom_contact_data.ajax_submit_demo:
+  path: '/ajaxform'
+  defaults:
+    _form:  '\Drupal\custom_contact_data\Form\AjaxSubmitDemo'
+    _title: 'Ajax Simple Form'
+  requirements:
+    _permission: 'access content'
