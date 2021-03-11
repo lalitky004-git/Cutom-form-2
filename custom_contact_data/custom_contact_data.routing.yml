@@ -12,7 +12,9 @@ custom_contact_data.custom_controller_getCustomData:
     _controller: '\Drupal\custom_contact_data\Form\CustomController::getCustomData'
     _title: 'Custom Data'
   requirements:
-    _permission: 'access content'
+    _role: 'administrator'
+  options:
+    _admin_route: TRUE
 
 custom_contact_data.ajax_submit_demo:
   path: '/ajaxform'
